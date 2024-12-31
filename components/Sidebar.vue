@@ -1,7 +1,6 @@
-
 <template lang="pug">
 div
-    aside
+    aside(@click.outside="handleOutsideClick")
         transition(
             enter-to-class="animate__animated animate__slideInLeft",
             leave-to-class="animate__animated animate__slideOutLeft"
@@ -11,21 +10,49 @@ div
                     h1 x
                 ul.list(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'")
                     li.listItem
-                        nuxt-link.lin.col(:to="localePath('/')" ) {{$t('home')}}
+                        NuxtLink.lin.col(
+                            :to="localePath('/')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('home')}}
                     li.listItem
-                        NuxtLink.lin.col(:to="localePath('/about')") {{$t('about')}}
+                        NuxtLink.lin.col(
+                            :to="localePath('/about')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('about')}}
                     li.listItem
-                        NuxtLink.lin.col(:to="localePath('/team')") {{$t('team')}}
+                        NuxtLink.lin.col(
+                            :to="localePath('/team')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('team')}}
                     li.listItem
-                        NuxtLink.lin.col(:to="localePath('/menu')") {{$t('pageTitle3')}}
+                        NuxtLink.lin.col(
+                            :to="localePath('/menu')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('pageTitle3')}}
                     li.listItem
-                        NuxtLink.lin.col(:to="localePath('/orders')") {{$t('order now')}}
+                        NuxtLink.lin.col(
+                            :to="localePath('/orders')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('order now')}}
                     li.listItem
-                        NuxtLink.lin.col(:to="localePath('social')") {{$t('pageTitle4')}}
+                        NuxtLink.lin.col(
+                            :to="localePath('/social')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('pageTitle4')}}
                     li.listItem
-                        NuxtLink.lin.col(:to="localePath('contact')") {{$t('contact')}}
-                    
+                        NuxtLink.lin.col(
+                            :to="localePath('/contact')" 
+                            active-class="text-yellow-500 font-bold" 
+                            @click="close"
+                        ) {{$t('contact')}}
 </template>
+    
 <script setup lang="ts">
 import { useI18nUtils } from "../i18n";
 const { t, locale, setLocale, localePath, changeLanguageEN } = useI18nUtils();

@@ -3,7 +3,7 @@ div(class="bg-[#262c27] text-white py-4" :dir="$i18n.locale === 'ar' ? 'rtl' : '
   div(class="w-[85%]").mx-auto.flex.flex-col.gap-4
     .flex.justify-between.items-center
       .flex.flex-col.items-start
-        div.logo.w-28
+        div.logo(class="md:w-28 w-24")
           img(src="/public/large stickers v.3.svg" alt="Logo")
         //- p.text-xs.mt-2.text-gray-400 {{ $i18n.locale }}
 
@@ -30,13 +30,14 @@ div(class="bg-[#262c27] text-white py-4" :dir="$i18n.locale === 'ar' ? 'rtl' : '
     // Dropdown menu for small screens
   
     div(class="justify-center gap-6 items-center border-t border-gray-700 pt-4 space-x-6 text-sm hidden md:flex")
-      NuxtLink(:to="localePath('/')", class="hover:text-yellow-500") {{$t('home')}}
-      NuxtLink(:to="localePath('about')", class="hover:text-yellow-500") {{$t('about')}}
-      NuxtLink(:to="localePath('team')", class="hover:text-yellow-500") {{$t('team')}}
-      NuxtLink(:to="localePath('menu')", class="hover:text-yellow-500") {{$t('pageTitle3')}}
-      NuxtLink(:to="localePath('orders')", class="hover:text-yellow-500") {{$t('order now')}}
-      NuxtLink(:to="localePath('social')", class="hover:text-yellow-500") {{$t('pageTitle4')}}
-      NuxtLink(:to="localePath('contact')", class="hover:text-yellow-500") {{$t('contact')}}
+      NuxtLink(:to="localePath('/')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('home')}}
+      NuxtLink(:to="localePath('about')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('about')}}
+      NuxtLink(:to="localePath('team')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('team')}}
+      NuxtLink(:to="localePath('menu')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('pageTitle3')}}
+      NuxtLink(:to="localePath('orders')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('order now')}}
+      NuxtLink(:to="localePath('social')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('pageTitle4')}}
+      NuxtLink(:to="localePath('contact')" active-class="text-yellow-500 font-bold" class="hover:text-yellow-500") {{$t('contact')}}
+
 
 
 

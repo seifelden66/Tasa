@@ -25,11 +25,11 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
                 h3(class="text-3xl md:text-5xl text-[#262c27] font-bold mb-4 md:mb-6") {{$t('tasa welcome')}}
                 p(class="text-base md:text-xl text-[#262c27]") {{ $t('tasa content') }}
                 .flex.flex-wrap.items-center.gap-4.mx-auto.justify-center.mt-6
-                    button(
-                        class="bg-[#262c27] text-amber-300 py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
+                    NuxtLink(
+                      :to="localePath('about')", class="bg-[#262c27] text-amber-300 py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
                     ) {{$t('who_we')}}
-                    button(
-                        class="bg-[#262c27] text-amber-300 py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
+                    NuxtLink(
+                      :to="localePath('orders')",class="bg-[#262c27] text-amber-300 py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
                     ) {{$t('order now')}}
 
         div.flex.items-center.justify-center(
@@ -45,7 +45,10 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
                 
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18nUtils } from "../i18n";
+const { localePath, changeLanguageEN } = useI18nUtils();
+</script>
 
 <style lang="scss" scoped>
 .div {
