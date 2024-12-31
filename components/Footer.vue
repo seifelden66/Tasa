@@ -10,7 +10,7 @@
            
 
             
-        .right(class='flex items-center gap-11')
+        .right(class='flex items-center flex-wrap gap-11')
             NuxtLink.lin.col(:to="localePath('/')")
                 h6 {{$t('home')}}
             NuxtLink.lin.col(:to="localePath('about')")
@@ -45,11 +45,17 @@ const { localePath } = useI18nUtils();
     .contain {
         display: flex;
         justify-content: space-between;
+        @media (max-width:768px) {
+            gap: 100px;
+        }
         .left{
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2.5em;
+            @media (max-width: 768px) {
+                gap: 1em;                
+            }
 
         }
         
