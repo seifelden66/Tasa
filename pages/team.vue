@@ -10,13 +10,13 @@
                     .icon(class="flex-shrink-0")
                         NuxtImg(src="/Fatoosh-Salad.jpg" alt="CEO" class="w-16 h-16 rounded-full object-cover")
                     .info
-                        h3(class="font-bold text-lg") {{ $t('ceo') }}: [{{ $t('Member Name') }}]
+                        h3(class="font-bold text-lg") {{ $t('ceo') }}
                         p(class="text-gray-600 mt-2") {{ $t('ceoDescription') }}
                 li(class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-6")
                     .icon(class="flex-shrink-0")
                         NuxtImg(src="/Fatoosh-Salad.jpg" alt="Board Member" class="w-16 h-16 rounded-full object-cover")
                     .info
-                        h3(class="font-bold text-lg") {{ $t('boardMember') }}: [{{ $t('Member Name') }}]
+                        h3(class="font-bold text-lg") {{ $t('boardMember') }}
                         p(class="text-gray-600 mt-2") {{ $t('boardMemberDescription') }}
 
         //- Executive Team Section
@@ -27,19 +27,19 @@
                     .icon(class="flex-shrink-0")
                         NuxtImg(src="/Fatoosh-Salad.jpg" alt="Executive CEO" class="w-16 h-16 rounded-full object-cover")
                     .info
-                        h3(class="font-bold text-lg") {{ $t('executiveCeo') }}: [{{ $t('Member Name') }}]
+                        h3(class="font-bold text-lg") {{ $t('executiveCeo') }}
                         p(class="text-gray-600 mt-2") {{ $t('executiveCeoDescription') }}
                 li(class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-6 border-b pb-4 border-gray-200")
                     .icon(class="flex-shrink-0")
                         NuxtImg(src="/Fatoosh-Salad.jpg" alt="Marketing Manager" class="w-16 h-16 rounded-full object-cover")
                     .info
-                        h3(class="font-bold text-lg") {{ $t('marketingManager') }}: [{{ $t('Member Name') }}]
+                        h3(class="font-bold text-lg") {{ $t('marketingManager') }}
                         p(class="text-gray-600 mt-2") {{ $t('marketingManagerDescription') }}
                 li(class="flex flex-col md:flex-row items-start md:items-center gap-4")
                     .icon(class="flex-shrink-0")
                         NuxtImg(src="/Fatoosh-Salad.jpg" alt="Operations Manager" class="w-16 h-16 rounded-full object-cover")
                     .info
-                        h3(class="font-bold text-lg") {{ $t('operationsManager') }}: [{{ $t('Member Name') }}]
+                        h3(class="font-bold text-lg") {{ $t('operationsManager') }}
                         p(class="text-gray-600 mt-2") {{ $t('operationsManagerDescription') }}
 </template>
 
