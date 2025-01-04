@@ -6,8 +6,8 @@
         p(class="text-lg text-gray-600 text-center mb-12") {{ $t('pageContent2') }}
 
         .buttons(class="flex flex-col md:flex-row justify-center gap-4")
-            a(href="/order" class="bg-green-600 text-white font-semibold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-green-700 transition duration-300") {{ $t('orderNow') }}
-            a(href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white font-semibold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-green-500 transition duration-300") {{ $t('whatsApp') }}
+            a(href="/order" class="bg-[#12284c] text-[#f8f8f8] font-semibold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-[#0a1930] transition duration-300") {{ $t('orderNow') }}
+            a(href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" class="bg-[#12284c] text-[#f8f8f8] font-semibold text-lg py-3 px-8 rounded-lg shadow-lg hover:bg-[#0a1930] transition duration-300") {{ $t('whatsApp') }}
 
         .delivery-apps(class="mt-16 text-center")
             h2(class="text-2xl font-semibold text-[#262c27] mb-4") {{ $t('deliveryVia') }}

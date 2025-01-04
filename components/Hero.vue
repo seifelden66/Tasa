@@ -16,20 +16,20 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
         :data-aos-delay="100"
         :class="{ 'flex-col-reverse md:flex-row-reverse': $i18n.locale === 'ar', 'flex-col-reverse md:flex-row': $i18n.locale === 'en' }"
     )
-        div.my-auto.flex.items-center.justify-center.bg-amber-300(
-            class="h-[350px] md:h-[550px] flex-grow-0 p-6 md:p-10 w-full md:w-auto"
+        div.my-auto.flex.items-center.justify-center(
+            class="h-[450px] md:h-[550px] flex-grow-0 p-8 md:p-10 w-full md:w-auto bg-[#ffe5c7]"
         )
             .relative.z-10(
                 :class="{ 'text-right': $i18n.locale === 'ar', 'text-left': $i18n.locale === 'en' }"
             )
-                h3(class="text-3xl md:text-5xl text-[#262c27] font-bold mb-4 md:mb-6") {{$t('tasa welcome')}}
-                p(class="text-base md:text-xl text-[#262c27]") {{ $t('tasa content') }}
+                h3(class="text-3xl md:text-5xl text-[#12284c] font-bold mb-4 md:mb-6") {{$t('tasa welcome')}}
+                p(class="text-base md:text-xl text-[#12284c]") {{ $t('tasa content') }}
                 .flex.flex-wrap.items-center.gap-4.mx-auto.justify-center.mt-6
                     NuxtLink(
-                      :to="localePath('about')", class="bg-[#262c27] text-amber-300 py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
+                      :to="localePath('about')", class="bg-[#12284c] text-[#ffe5c7] py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
                     ) {{$t('who_we')}}
                     NuxtLink(
-                      :to="localePath('orders')",class="bg-[#262c27] text-amber-300 py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
+                      :to="localePath('orders')",class="bg-[#12284c] text-[#ffe5c7] py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
                     ) {{$t('order now')}}
 
         div.flex.items-center.justify-center(
@@ -53,7 +53,7 @@ const { localePath, changeLanguageEN } = useI18nUtils();
 <style lang="scss" scoped>
 .div {
   //   height: 500px;
-  .container-fluid {
+  .contain {
     .fr {
       display: grid;
       gap: 1em;
@@ -62,7 +62,7 @@ const { localePath, changeLanguageEN } = useI18nUtils();
       .card {
         padding: 0;
         border: none;
-        background: #fbc30c;
+        background: #ffe5c7;
         color: black;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -104,7 +104,7 @@ const { localePath, changeLanguageEN } = useI18nUtils();
 }
 @media (max-width: 992px) {
   .div {
-    height: 650px;
+    height: 750px;
     .card {
       font-size: smaller;
       height: 620px !important;

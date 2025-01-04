@@ -1,5 +1,5 @@
 <template lang="pug">
-.div.text-white
+.div(class='text-[#ffe5c7]')
     .contain
         div(class="about-section py-10 ")
             div(class="container  mx-auto flex flex-col md:flex-row items-center gap-8")
@@ -16,7 +16,7 @@
                     p(dir="auto").text-lg.mb-6 {{ $t(aboutContent).slice(0, 150) }}...
                     NuxtLink(
                     to="/about"
-                    class="bg-white text-[#262c27] py-2 px-6 rounded-full shadow-md hover:bg-[#241b24] transition duration-300 inline-block"
+                    class="bg-[#ffe5c7] text-[#12284c] py-2 px-6 rounded-full shadow-md hover:bg-[#dfc0a0] transition duration-300 inline-block"
                     ) {{ $t('read_more') }}
 </template>
 

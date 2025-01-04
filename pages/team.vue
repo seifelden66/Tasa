@@ -45,11 +45,5 @@
 
 
 <style scoped>
-.section-board, .section-executive {
-@apply bg-white shadow-md rounded-lg p-6;
-}
 
-.icon img {
-@apply w-16 h-16 rounded-full object-cover;
-}
 </style>

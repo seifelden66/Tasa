@@ -82,14 +82,15 @@
                 display: flex;
                 width: 10vw;
                 .smoothBoxWhite{
-                    background: rgb(22, 109, 22);
+                    background: #12284c;
                     border: none;
+                    color: #ffe5c7;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     transition: 300ms;
                     &:hover{
-                        background: rgb(8, 75, 8);
+                        background: #0c1d39;
                     }
                 }
             }
@@ -107,8 +108,8 @@
         }
         .right{
             position: relative;
-            background: #262c27;
-            color: white;
+            background: #12284c;
+            color: #ffe5c7;
             padding: 1em;
             border-radius: 10px;
             .btmbtm{
@@ -141,7 +142,7 @@
 @media (max-width:768px) {
     .div {
 padding-top: 5em;
-        .container-fluid {
+        .contain {
         
             .btm{
             display: grid;

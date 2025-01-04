@@ -6,8 +6,7 @@
             .image
                 .loh(:style="$i18n.locale === 'ar' ? 'text-align: right;': 'text-align: left;'")
                     div.logo.w-28
-                        NuxtImg(src="/large stickers v.3.svg" alt="Logo")
-           
+                        NuxtImg(src="/tasa-logo.png")           
 
             
         .right(class='flex items-center flex-wrap gap-11')
@@ -39,14 +38,16 @@ const { localePath } = useI18nUtils();
 <style lang="scss" scoped>
 .div {
     margin: 0 !important;
-    background: #f8f8f8;
-    padding-top: 7em;
+    // background: #f8f8f8;
+    color: #ffe5c7;
+    padding-top: 2em;
     padding-bottom: 1em;
     .contain {
         display: flex;
         justify-content: space-between;
         @media (max-width:768px) {
-            gap: 100px;
+            // gap: 100px;
+            flex-direction: column;
         }
         .left{
             display: flex;
@@ -62,21 +63,5 @@ const { localePath } = useI18nUtils();
        
     }
 }
-// @media (max-width:768px) {
-//     .div{
-//         padding-top: 5em;
-//         .container-fluid{
-//             display: grid;
-//             grid-template-columns: 1fr;
-//             place-content: center;
-//             gap: 3em;
-            
-//             .right{
-//                 display: grid;
-//                 grid-template-columns: 1fr 1fr;
-//                 gap: 5em;
-//             }
-//         }
-//     }
-// }
+
 </style>

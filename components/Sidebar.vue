@@ -6,7 +6,7 @@ div
             leave-to-class="animate__animated animate__slideOutLeft"
         )
             div.side(v-show="side")
-                button(@click="close")
+                button(@click="close" class="circ flex items-center justify-center w-10 h-10 rounded-full")
                     h1 x
                 ul.list(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'")
                     li.listItem
@@ -52,7 +52,7 @@ div
                             @click="close"
                         ) {{$t('contact')}}
 </template>
-    
+
 <script setup lang="ts">
 import { useI18nUtils } from "../i18n";
 const { t, locale, setLocale, localePath, changeLanguageEN } = useI18nUtils();
@@ -60,59 +60,59 @@ const lang = ref(locale);
 </script>
 <style lang="scss" scoped>
 .animate__animated.animate__slideInLeft,
-.animate__animated.animate__slideOutLeft{
-    animation-duration: 600ms;
-    }
+.animate__animated.animate__slideOutLeft {
+  animation-duration: 600ms;
+}
+
 .side {
-    font-size: 26px;
-    background: #000;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 270px;
-    z-index: 999;
-    padding: .75em;
-    .social{
+  font-size: 26px;
+  background: #12284c;
+  color: #ffe5c7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  z-index: 999;
+  padding: 0.75em;
+  .social {
     margin-top: 20px;
     display: flex;
     gap: 4px;
     font-size: 18px;
-    .it{
-        &:hover{
+    .it {
+      &:hover {
         text-decoration: none;
-        color: rgb(221, 59, 86);
+        color: #e5bb8a;
         cursor: pointer;
-        }
+      }
     }
-    
-    }
-    
-    button {
-    
-    border: none;
-    background: #000;
-    color: #fff;
+  }
+  .circ {
+    color: #ffe5c7;
+    // background: inherit;
+    border: 1px solid #ffe5c7;
+    cursor: pointer;
     transform: translatex(200px);
-    }
-    .list {
+  }
+
+  .list {
     list-style: none;
     text-decoration: none;
     color: #fff;
     .listItem {
-        color: #fff;
-        margin-top: .5em;
-        .lin {
+      color: #fff;
+      margin-top: 0.5em;
+      .lin {
         text-decoration: none;
         color: inherit;
-        
+
         &:hover {
-            text-decoration: none;
-            color: rgb(221, 59, 86);
+          text-decoration: none;
+          color: #e5bb8a;
         }
-        }
+      }
     }
-    }
+  }
 }
 </style>
