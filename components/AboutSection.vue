@@ -3,11 +3,11 @@
     .contain
         div(class="about-section py-10 ")
             div(class="container  mx-auto flex flex-col md:flex-row items-center gap-8")
-                div(class="about-image w-full md:w-1/2")
+                div(class="about-image w-full md:w-1/2 md:h-full h-96")
                     NuxtImg(
                     :src="imageSrc"
                     alt="About Tasa Express"
-                    class="rounded-lg object-cover w-full h-64 md:h-full"
+                    class="rounded-lg object-cover w-full h-full"
                     )
                 div(class="about-content w-full md:w-1/2"
                     :class="{ 'text-right': $i18n.locale === 'ar', 'text-left': $i18n.locale === 'en' }"

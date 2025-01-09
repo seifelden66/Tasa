@@ -14,10 +14,10 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
         :data-aos="fade-up"
         :data-aos-duration="550"
         :data-aos-delay="100"
-        :class="{ 'flex-col-reverse md:flex-row-reverse': $i18n.locale === 'ar', 'flex-col-reverse md:flex-row': $i18n.locale === 'en' }"
+        :class="{'flex-col-reverse md:flex-row-reverse': $i18n.locale === 'ar', 'flex-col-reverse md:flex-row': $i18n.locale === 'en' }"
     )
         div.my-auto.flex.items-center.justify-center(
-            class="h-[450px] md:h-[550px] flex-grow-0 p-8 md:p-10 w-full md:w-auto bg-[#ffe5c7]"
+            class="h-[450px] md:h-[550px] flex-grow-0 p-8 md:p-8 w-full md:w-auto bg-[#ffe5c7]"
         )
             .relative.z-10(
                 :class="{ 'text-right': $i18n.locale === 'ar', 'text-left': $i18n.locale === 'en' }"
@@ -33,10 +33,13 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
                     ) {{$t('order now')}}
 
         div.flex.items-center.justify-center(
-            class="h-[250px] md:h-[550px] w-full md:w-[650px] flex-shrink-0 p-4 md:p-0"
+          class="h-[250px] md:h-[550px] w-full max-w-[600px] md:max-w-[400px] flex-shrink-0 p-4 md:p-0"
         )
-            NuxtImg(src="/heroside.jpg" alt="Hero Image" class="object-cover w-full h-full rounded-lg md:rounded-none")
-
+          NuxtImg(
+            src="/photo-8.jpg" 
+            alt="Hero Image" 
+            class="object-cover w-full h-full rounded-lg md:rounded-none"
+          )
 
 
 

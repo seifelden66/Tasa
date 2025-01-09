@@ -2,63 +2,38 @@
     "meals": [
         {
             "id": 1,
-            "name": "Creamy-Chicken-with-Green-Rice",
-            "description": "creamy",
-            "image_url": "Creamy-Chicken-with-Green-Rice.jpg"
+            "name": "machoobs-chicken",
+            "image_url": "machoobs-chicken.jpg"
         },
         {
             "id": 2,
-            "name": "Creamy-Saffron-yogurt",
-            "description": "Creamy-Saffron-yogurt",
-            "image_url": "Creamy-Saffron-yogurt.jpg"
+            "name": "eltaybeen-macaroni",
+            "image_url": "eltaybeen-macaroni.JPG"
         },
         {
             "id": 3,
-            "name": "Daquse-Sauce",
-            "description": "An assortment of sushi rolls, nigiri, and sashimi.",
-            "image_url": "Daquse-Sauce.jpg"
+            "name": "Jareesh-Mozat",
+            "image_url": "Jareesh-Mozat.jpg"
         },
         {
             "id": 4,
-            "name": "Fatoosh-Salad",
-            "description": "A juicy beef patty topped with cheese, lettuce, tomato, and pickles on a toasted bun.",
-            "image_url": "Fatoosh-Salad.jpg"
+            "name": "Short-Ribs-Machboos",
+            "image_url": "Short-Ribs-Machboos.jpg"
         },
         {
             "id": 5,
             "name": "Gabout-Meat",
-            "description": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
             "image_url": "Gabout-Meat.jpg"
         },
         {
             "id": 6,
-            "name": "Garlic-sauce",
-            "description": "A stir-fried rice noodle dish with shrimp, eggs, peanuts, and a tangy tamarind sauce.",
-            "image_url": "Garlic-sauce.jpg"
+            "name": "mamouch-robyan",
+            "image_url": "mamouch-robyan.jpg"
         },
         {
             "id": 7,
-            "name": "GREEN-MABOUCH",
-            "description": "Classic pizza topped with fresh tomatoes, mozzarella cheese, and basil leaves.",
-            "image_url": "GREEN-MABOUCH.jpg"
-        },
-        {
-            "id": 8,
-            "name": "Healthy-Machboos-Rice",
-            "description": "Soft corn tortillas filled with seasoned beef, lettuce, and cheese.",
-            "image_url": "Healthy-Machboos-Rice.jpg"
-        },
-        {
-            "id": 9,
-            "name": "Jareesh-Chicke",
-            "description": "A flavorful soup with rice noodles, beef, and aromatic herbs.",
-            "image_url": "Jareesh-Chicke.jpg"
-        },
-        {
-            "id": 10,
-            "name": "Chocolate Lava Cake",
-            "description": "A rich chocolate cake with a molten chocolate center.",
-            "image_url": "Jareesh-Mozat.jpg"
+            "name": "mozat-Lamb-shunks-Machboos-(Boneless-)",
+            "image_url": "mozat-Lamb-shunks-Machboos-(Boneless-).jpg"
         }
     ]
 }

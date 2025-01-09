@@ -79,19 +79,32 @@ export default {
   platters: "Platters",
   plattersDescription:
     "Perfect for gatherings and family events, available in larger sizes to serve more people.",
-    pageTitle4: "Social Responsibility at Tasa Express",
-pageContent4: "At Tasa Express, we believe that success is not just about serving delicious food, but also about playing an active role in the community. From the beginning, we made social responsibility an essential part of our vision. We strive to create a positive impact by supporting local activities and contributing to social and cultural initiatives.",
-ourOffersForEvents: "Our Offers for Events",
-ourOffersForEventsDescription: "We ensure to offer special deals during holidays and national and religious events, providing special gifts to encourage customers to participate in community celebrations.",
-engagementWithEvents: "Engagement with Local and Global Events",
-engagementWithEventsDescription: "We do not only celebrate local events but also engage with global events that align with our humanitarian values. We consider these moments as wonderful opportunities to provide support and contribute to societal positivity.",
-sponsorshipTitle: "Our Sponsorship of Al-Arabi Football Club – Youth Sector",
-sponsorshipDescription: "We are proud to sponsor Al-Arabi Sports Club, particularly in the youth football sector. Through this sponsorship, we aim to support young athletes in Kuwait and encourage them to move forward in their sports careers.",
-contributionsTitle: "Our Contribution to Cultural and Scientific Programs",
-supportingCulturalPrograms: "Supporting Cultural Programs",
-supportingCulturalProgramsDescription: "We provide support for cultural events and art exhibitions that reflect authentic Kuwaiti culture, whether by sponsoring events or providing financial support for artistic works.",
-contributingToEducationalPrograms: "Contributing to Educational Programs",
-contributingToEducationalProgramsDescription: "We also support educational programs that aim to develop cultural and intellectual skills in the youth. By supporting these programs, we hope to promote innovation and encourage scientific thinking in future generations.",
-closingContent: "At Tasa Express, we believe that social responsibility is not just a commitment but a part of our identity. We are dedicated to continuing these activities and initiatives to improve our local communities and contribute to social and cultural growth in Kuwait.",
-
+  pageTitle4: "Social Responsibility at Tasa Express",
+  pageContent4:
+    "At Tasa Express, we believe that success is not just about serving delicious food, but also about playing an active role in the community. From the beginning, we made social responsibility an essential part of our vision. We strive to create a positive impact by supporting local activities and contributing to social and cultural initiatives.",
+  ourOffersForEvents: "Our Offers for Events",
+  ourOffersForEventsDescription:
+    "We ensure to offer special deals during holidays and national and religious events, providing special gifts to encourage customers to participate in community celebrations.",
+  engagementWithEvents: "Engagement with Local and Global Events",
+  engagementWithEventsDescription:
+    "We do not only celebrate local events but also engage with global events that align with our humanitarian values. We consider these moments as wonderful opportunities to provide support and contribute to societal positivity.",
+  sponsorshipTitle: "Our Sponsorship of Al-Arabi Football Club – Youth Sector",
+  sponsorshipDescription:
+    "We are proud to sponsor Al-Arabi Sports Club, particularly in the youth football sector. Through this sponsorship, we aim to support young athletes in Kuwait and encourage them to move forward in their sports careers.",
+  contributionsTitle: "Our Contribution to Cultural and Scientific Programs",
+  supportingCulturalPrograms: "Supporting Cultural Programs",
+  supportingCulturalProgramsDescription:
+    "We provide support for cultural events and art exhibitions that reflect authentic Kuwaiti culture, whether by sponsoring events or providing financial support for artistic works.",
+  contributingToEducationalPrograms: "Contributing to Educational Programs",
+  contributingToEducationalProgramsDescription:
+    "We also support educational programs that aim to develop cultural and intellectual skills in the youth. By supporting these programs, we hope to promote innovation and encourage scientific thinking in future generations.",
+  closingContent:
+    "At Tasa Express, we believe that social responsibility is not just a commitment but a part of our identity. We are dedicated to continuing these activities and initiatives to improve our local communities and contribute to social and cultural growth in Kuwait.",
+  "machoobs-chicken": "Machboos Chicken",
+  "eltaybeen-macaroni": "Eltaybeen Macaroni",
+  "Jareesh-Mozat": "Jareesh with Mozat",
+  "Short-Ribs-Machboos": "Short Ribs Machboos",
+  "Gabout-Meat": "Gabout Meat",
+  "mamouch-robyan": "Mamouch with Shrimp",
+  "mozat-Lamb-shunks-Machboos-(Boneless-)": "Machboos Lamb Shanks (Boneless)",
 };

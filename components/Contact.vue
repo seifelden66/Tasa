@@ -6,47 +6,12 @@
                 h1 {{$t('contact')}}
         .btm 
             .left
-                .item
-                    .label(:style="$i18n.locale === 'ar' ? 'display:flex; justify-content:right' : 'direction:ltr'")
-                        label(for="fullname") {{$t('fullname')}}
-                    .inp
-                        input#fullname(type="text")
-                .item 
-                    .label(:style="$i18n.locale === 'ar' ? 'display:flex; justify-content:right' : 'direction:ltr'")
-                        label(for="email") {{$t('email')}}
-                    .inp
-                        input#email(type="email")
-                .item 
-                    .label(:style="$i18n.locale === 'ar' ? 'display:flex; justify-content:right' : 'direction:ltr'")
-                        label(for="phone") {{$t('phone')}}
-                    .inp
-                        input#phone(type="text")
-                .item 
-                    .label(:style="$i18n.locale === 'ar' ? 'display:flex; justify-content:right' : 'direction:ltr'")
-                        label(for="message") {{$t('message')}}
-                    .inp
-                        textarea#message
-                .bb
-                    .smoothBoxWhite 
-                        h6 {{$t('submit')}}
+              <!-- google maps -->
 
             .right 
                 .title 
                     h1 contact
-                .btmbtm
-                    h6   
-                        LogosPhone/
-                        span  574395624656462456
-                    h6   
-                        LogosWhats/
-                        span  57439345234563456
-                    h6   
-                        LogosMail/
-                        span  info@rockal.org
-                    h6   
-                        LogosMail/
-                        span  info@rockal.org
-                .social
+                
                     .circle 
                         LogosTwitter
                     .circle 

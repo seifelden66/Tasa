@@ -1,6 +1,6 @@
 <template lang="pug">
 ClientOnly
-    .contain.h-screen.flex.items-center.flex-col.justify-center
+    .contain.flex.items-center.flex-col.justify-center(class="h-[55vh] md:h-screen")
         h1.text-3xl.text-center {{$t('Featuered_meals')}}
         .relative.flex.items-center.justify-center.w-full
             button.left-0.absolute.bg-gray-800.text-white.px-4.py-2.rounded-full.z-10(@click="swiper.prev()") 
@@ -10,8 +10,7 @@ ClientOnly
                     .card.bg-white.shadow-lg.rounded-lg.max-w-xs.w-full.text-center.p-5
                         .img
                             NuxtImg(:src="i.image_url")
-                        h2.text-lg.font-bold.mb-2 {{ i.name }}
-                        p.text-sm.text-gray-500 {{ i.description }}
+                        h2.text-lg.font-bold.mb-2 {{ $t(i.name) }}
             button.right-0.absolute.bg-gray-800.text-white.px-4.py-2.rounded-full.z-10(@click="swiper.next()") 
                 RightArrow/
 </template>
@@ -39,7 +38,6 @@ const swiper = useSwiper(containerRef, {
     },
   },
 });
-
 </script>
 
 <style lang="scss" scoped>
@@ -48,8 +46,13 @@ const swiper = useSwiper(containerRef, {
   margin: 0 !important;
   background: #f8f8f8;
   padding-top: 7em;
-
+  @media (max-width: 768px) {
+  height: fit-content;
+  }
   .contain {
+    @media (max-width: 768px) {
+  height: fit-content;
+  }
     .navBar {
       margin-bottom: 2em;
       display: flex;
@@ -69,12 +72,12 @@ const swiper = useSwiper(containerRef, {
       }
     }
     .swiper {
-  height: auto !important;
-}
+      height: auto !important;
+    }
 
-.swiper-slide {
-  width: auto !important;
-}
+    .swiper-slide {
+      width: auto !important;
+    }
     .cards {
       .card {
         height: 330px;
@@ -90,20 +93,6 @@ const swiper = useSwiper(containerRef, {
             font-size: 14px;
           }
         }
-      }
-    }
-  }
-}
-
-.div {
-  padding-top: 5em;
-  .container-fluid {
-    .navBar {
-      display: flex;
-      justify-content: center !important;
-      text-align: center !important;
-      .right {
-        display: none !important;
       }
     }
   }
