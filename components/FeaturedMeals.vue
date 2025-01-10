@@ -8,7 +8,7 @@ ClientOnly
             swiper-container( ref="containerRef" class="swiper w-full h-full")
                 swiper-slide(v-for="i in meals" :key="i.id" class="flex justify-center items-center p-4")
                     .card.bg-white.shadow-lg.rounded-lg.max-w-xs.w-full.text-center.p-5
-                        .img
+                        .img(class="w-full h-52")
                             NuxtImg(:src="i.image_url")
                         h2.text-lg.font-bold.mb-2 {{ $t(i.name) }}
             button.right-0.absolute.bg-gray-800.text-white.px-4.py-2.rounded-full.z-10(@click="swiper.next()") 

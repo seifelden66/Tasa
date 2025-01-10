@@ -4,7 +4,7 @@
     div( data-aos="fade-up" :data-aos-duration="550" :data-aos-delay="100")
         FeaturedMeals/
     div(data-aos="fade-up" :data-aos-duration="450" :data-aos-delay="200")
-        AboutSection(imageSrc="/aboutTasa.jpg"
+        AboutSection(imageSrc="/png-tasa.png"
                     :aboutHeader="'aboutHeader'"
                     :aboutContent="'aboutContent'")/
     div( data-aos="fade-up" :data-aos-duration="550" :data-aos-delay="100")

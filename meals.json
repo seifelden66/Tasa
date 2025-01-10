@@ -12,19 +12,15 @@
         },
         {
             "id": 3,
-            "name": "Jareesh-Mozat",
-            "image_url": "Jareesh-Mozat.jpg"
+            "name": "creamy-chicken-with-rice-tray",
+            "image_url": "creamy-chicken-with-rice-tray.jpg"
         },
         {
             "id": 4,
             "name": "Short-Ribs-Machboos",
-            "image_url": "Short-Ribs-Machboos.jpg"
+            "image_url": "Snapseed.jpg"
         },
-        {
-            "id": 5,
-            "name": "Gabout-Meat",
-            "image_url": "Gabout-Meat.jpg"
-        },
+      
         {
             "id": 6,
             "name": "mamouch-robyan",
@@ -32,8 +28,8 @@
         },
         {
             "id": 7,
-            "name": "mozat-Lamb-shunks-Machboos-(Boneless-)",
-            "image_url": "mozat-Lamb-shunks-Machboos-(Boneless-).jpg"
+            "name": "twisa-machboos-lobia-plain",
+            "image_url": "twisa-machboos-lobia-plain.jpg"
         }
     ]
 }

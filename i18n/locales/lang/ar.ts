@@ -104,5 +104,6 @@ export default {
   "Short-Ribs-Machboos": "مجبوس بالضلوع القصيرة",
   "Gabout-Meat": "قبوت باللحم",
   "mamouch-robyan": "مموش روبيان",
-  "mozat-Lamb-shunks-Machboos-(Boneless-)": "مجبوس لحم موزات بدون عظم",
+  "creamy-chicken-with-rice-tray":"الصينيه الزقرتيه (كريمة دياي و عيش)",
+  "twisa-machboos-lobia-plain":"طويسه مجبوس لوبيا ساده",
 };

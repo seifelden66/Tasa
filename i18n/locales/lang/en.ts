@@ -106,5 +106,6 @@ export default {
   "Short-Ribs-Machboos": "Short Ribs Machboos",
   "Gabout-Meat": "Gabout Meat",
   "mamouch-robyan": "Mamouch with Shrimp",
-  "mozat-Lamb-shunks-Machboos-(Boneless-)": "Machboos Lamb Shanks (Boneless)",
+  "twisa-machboos-lobia-plain": "Twisa machboos lobia plain",
+  "creamy-chicken-with-rice-tray":"Creamy chicken with rice tray"
 };
