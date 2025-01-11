@@ -4,8 +4,8 @@
     <Sidebar />
     <slot class="main-content" />
     <div class="fixed-icons">
-      <BagLogo class="icon" />
       <WhatsappLogo class="icon" />
+      <BagLogo class="icon" />
     </div>
     <Footer />
   </div>
@@ -48,8 +48,8 @@ html[dir="rtl"] .fixed-icons {
         right:30px
     }
     .icon{
-        width:45px;
-        height:45px
+        /* width:50px;
+        height:50px */
     }
     html[dir="rtl"] .fixed-icons {
   right: auto;

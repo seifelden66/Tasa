@@ -106,4 +106,5 @@ export default {
   "mamouch-robyan": "مموش روبيان",
   "creamy-chicken-with-rice-tray":"الصينيه الزقرتيه (كريمة دياي و عيش)",
   "twisa-machboos-lobia-plain":"طويسه مجبوس لوبيا ساده",
+  "shop-now":"تسوق الان"
 };

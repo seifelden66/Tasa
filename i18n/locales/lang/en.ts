@@ -107,5 +107,6 @@ export default {
   "Gabout-Meat": "Gabout Meat",
   "mamouch-robyan": "Mamouch with Shrimp",
   "twisa-machboos-lobia-plain": "Twisa machboos lobia plain",
-  "creamy-chicken-with-rice-tray":"Creamy chicken with rice tray"
+  "creamy-chicken-with-rice-tray":"Creamy chicken with rice tray",
+  "shop-now":"Shop Now"
 };

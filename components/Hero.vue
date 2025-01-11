@@ -36,7 +36,7 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
           class="h-[250px] md:h-[550px] w-full max-w-[600px] md:max-w-[400px] flex-shrink-0 p-4 md:p-0"
         )
           NuxtImg(
-            src="/photo-8.jpg" 
+            src="/png-tasa.png"
             alt="Hero Image" 
             class="object-cover w-full h-full rounded-lg md:rounded-none"
           )
