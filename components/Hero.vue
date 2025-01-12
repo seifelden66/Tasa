@@ -9,39 +9,29 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
             playsinline
             class="absolute top-0 left-0 w-full h-full object-cover"
     )
-.div.h-screen.flex.items-center
-    .contain.flex.items-center.relative(
-        :data-aos="fade-up"
-        :data-aos-duration="550"
-        :data-aos-delay="100"
-        :class="{'flex-col-reverse md:flex-row-reverse': $i18n.locale === 'ar', 'flex-col-reverse md:flex-row': $i18n.locale === 'en' }"
-    )
-        div.my-auto.flex.items-center.justify-center(
-            class="h-[450px] md:h-[550px] flex-grow-0 p-8 md:p-8 w-full md:w-auto bg-[#ffe5c7]"
-        )
-            .relative.z-10(
-                :class="{ 'text-right': $i18n.locale === 'ar', 'text-left': $i18n.locale === 'en' }"
-            )
-                h3(class="text-3xl md:text-5xl text-[#12284c] font-bold mb-4 md:mb-6") {{$t('tasa welcome')}}
-                p(class="text-base md:text-xl text-[#12284c]") {{ $t('tasa content') }}
-                .flex.flex-wrap.items-center.gap-4.mx-auto.justify-center.mt-6
-                    NuxtLink(
-                      :to="localePath('about')", class="bg-[#12284c] text-[#ffe5c7] py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
-                    ) {{$t('who_we')}}
-                    NuxtLink(
-                      :to="localePath('orders')",class="bg-[#12284c] text-[#ffe5c7] py-2 md:py-3 px-4 md:px-6 rounded-full shadow-lg hover:bg-[#241b24] hover:shadow-xl transition-transform transform hover:scale-105 font-medium text-sm md:text-lg"
-                    ) {{$t('order now')}}
+.div(class="min-h-screen flex items-center justify-center relative overflow-hidden pt-5") 
+    .contain(class="grid grid-cols-1 gap-6 px-6 md:px-12 py-12 items-center z-10 relative")
+        div(class="bg-[#ffe5c7] p-4 md:p-12 rounded-lg shadow-2xl ")
+            h3(class="text-4xl md:text-5xl font-extrabold text-[#12284c] mb-4") {{$t('tasa welcome')}}
+            p(class="text-lg md:text-xl text-[#12284c] leading-relaxed mb-6") {{ $t('tasa content') }}
+            .flex.flex-wrap.gap-4
+                NuxtLink(
+                    :to="localePath('about')"
+                    class="bg-[#12284c] text-[#ffe5c7] py-3 px-6 rounded-full shadow-md hover:bg-[#1e3a57] transition-transform transform hover:scale-105 font-medium text-lg"
+                ) {{$t('who_we')}}
+                NuxtLink(
+                    :to="localePath('orders')"
+                    class="bg-[#12284c] text-[#ffe5c7] py-3 px-6 rounded-full shadow-md hover:bg-[#1e3a57] transition-transform transform hover:scale-105 font-medium text-lg"
+                ) {{$t('order now')}}
 
-        div.flex.items-center.justify-center(
-          class="h-[250px] md:h-[550px] w-full max-w-[600px] md:max-w-[400px] flex-shrink-0 p-4 md:p-0"
-        )
-          NuxtImg(
-            src="/png-tasa.png"
-            alt="Hero Image" 
-            class="object-cover w-full h-full rounded-lg md:rounded-none"
-          )
-
-
+        //- div(class="relative w-full h-[500px] md:h-[500px] flex justify-center items-center overflow-hidden z-20 bg-white ") 
+        //-     .absolute.top-0.w-full.h-1/2(class="bg-[#12284c]")
+        //-         NuxtImg(
+        //-             src="/png-tasa.png"
+        //-             alt="Tasa Food Image"
+        //-             class="object-cover w-full h-full rounded-lg shadow-lg"
+        //-             style="object-position: center;"
+        //-         )
 
 
 
@@ -54,73 +44,5 @@ const { localePath, changeLanguageEN } = useI18nUtils();
 </script>
 
 <style lang="scss" scoped>
-.div {
-  //   height: 500px;
-  .contain {
-    .fr {
-      display: grid;
-      gap: 1em;
-      grid-template-columns: 1fr;
 
-      .card {
-        padding: 0;
-        border: none;
-        background: #ffe5c7;
-        color: black;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 450px;
-
-        .image {
-          width: 100%;
-          height: 450px;
-        }
-        .left {
-          padding: 1em;
-          .but {
-            width: 120px;
-            margin-top: 1em;
-            .lin {
-              width: 120px;
-              .smoothBox {
-                width: 120px;
-                display: flex;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-              }
-            }
-          }
-
-          h5 {
-            font-weight: 400 !important;
-          }
-          width: 80%;
-          display: flex;
-          flex-direction: column;
-          margin: 1em;
-          justify-content: center;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 992px) {
-  .div {
-    height: 750px;
-    .card {
-      font-size: smaller;
-      height: 620px !important;
-      display: grid;
-      grid-template-columns: 1fr !important;
-      .left {
-        height: 300px;
-
-        h5 {
-          font-weight: 400 !important;
-        }
-      }
-    }
-  }
-}
 </style>

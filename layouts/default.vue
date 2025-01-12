@@ -14,6 +14,7 @@
 <style>
 .main {
   position: relative;
+  
 }
 
 .fixed-nav {
