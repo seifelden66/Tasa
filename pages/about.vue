@@ -43,7 +43,7 @@ const { t, locale, setLocale, localePath, changeLanguageEN } = useI18nUtils();
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{
+  h2 {
     text-align: center;
   }
   @media (min-width: 768px) {
