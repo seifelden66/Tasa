@@ -9,6 +9,12 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
             playsinline
             class="absolute top-0 left-0 w-full h-full object-cover"
     )
+
+div(class="absolute z-[99] h-[600px] translate-y-[-50%] translate-x-[-50%] left-[50%]")
+    NuxtImg(
+        src="png-tasa.png"
+    )
+
 .div(class="min-h-screen flex items-center justify-center relative overflow-hidden pt-5") 
     .contain(class="grid grid-cols-1 gap-6 px-6 md:px-12 py-12 items-center z-10 relative")
         div(class="bg-[#ffe5c7] p-4 md:p-12 rounded-lg shadow-2xl ")
@@ -24,14 +30,8 @@ div(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
                     class="bg-[#12284c] text-[#ffe5c7] py-3 px-6 rounded-full shadow-md hover:bg-[#1e3a57] transition-transform transform hover:scale-105 font-medium text-lg"
                 ) {{$t('order now')}}
 
-        //- div(class="relative w-full h-[500px] md:h-[500px] flex justify-center items-center overflow-hidden z-20 bg-white ") 
-        //-     .absolute.top-0.w-full.h-1/2(class="bg-[#12284c]")
-        //-         NuxtImg(
-        //-             src="/png-tasa.png"
-        //-             alt="Tasa Food Image"
-        //-             class="object-cover w-full h-full rounded-lg shadow-lg"
-        //-             style="object-position: center;"
-        //-         )
+                .div(class='text-[#ffe5c7]')
+
 
 
 

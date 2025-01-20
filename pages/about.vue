@@ -1,11 +1,11 @@
 <template lang="pug">
 .div(class="pb-12" :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'")
     .contain
-        .card(class="flex pt-36 justify-between flex-col md:flex-row items-center bg-amber-400")
+        .card(class="flex pt-36 justify-between flex-col md:flex-row items-center bg-[#ffe5c7]")
             .left(class="p-5")
                 h1(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'" class="text-5xl font-bold") {{$t('about_us')}}
             .image
-                NuxtImg(src="/Fatoosh-Salad.jpg" class="responsive-image")
+                NuxtImg(src="/maria.JPG" class="responsive-image")
 
 .div3(style="background:#f8f8f8") 
     .contain(class="mt-10")
@@ -15,11 +15,11 @@
                 p(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'") {{t('story1')}}
             .line 
             .image
-                NuxtImg(src="/Fatoosh-Salad.jpg" class="responsive-image")
+                NuxtImg(src="/green-plate.jpg" class="responsive-image")
             
         .ittem(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'"  data-aos="fade-up" :data-aos-duration="400" :data-aos-delay="400") 
             .image
-                NuxtImg(src="/Fatoosh-Salad.jpg" class="responsive-image")
+                NuxtImg(src="/boy.jpg" class="responsive-image")
             .line
             .cont 
                 h2(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'") {{$t('history')}}
@@ -30,7 +30,7 @@
                 p(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'") {{t('ourVision')}}
             .line 
             .image
-                NuxtImg(src="/Fatoosh-Salad.jpg" class="responsive-image")
+                NuxtImg(src="/eat.jpg" class="responsive-image")
 </template>
 
 <script setup lang="ts">
@@ -48,14 +48,15 @@ const { t, locale, setLocale, localePath, changeLanguageEN } = useI18nUtils();
   }
   @media (min-width: 768px) {
     flex-direction: row;
-    
+
   }
   &:nth-child(2) {
     @media (max-width: 768px) {
       flex-direction: column-reverse;
     }
   }
-  .cont, .image {
+  .cont,
+  .image {
     flex: 1;
   }
 
@@ -65,12 +66,17 @@ const { t, locale, setLocale, localePath, changeLanguageEN } = useI18nUtils();
     border-right: 1px dotted #b5b4b4;
     margin: 0 20px;
     @media (max-width: 768px) {
-      display: none; 
+      display: none;
     }
   }
 
   .image {
-    width: 100%; 
+    height: 340px;
+    width: 100%;
+    @media (max-width: 768px) {
+      height: 300px;
+      flex:auto;
+    }
   }
 }
 </style>
