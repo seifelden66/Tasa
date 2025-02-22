@@ -21,12 +21,12 @@ div
                             active-class="text-yellow-500 font-bold" 
                             @click="close"
                         ) {{$t('about')}}
-                    li.listItem
-                        NuxtLink.lin.col(
-                            :to="localePath('/team')" 
-                            active-class="text-yellow-500 font-bold" 
-                            @click="close"
-                        ) {{$t('team')}}
+                    //- li.listItem
+                    //-     NuxtLink.lin.col(
+                    //-         :to="localePath('/team')" 
+                    //-         active-class="text-yellow-500 font-bold" 
+                    //-         @click="close"
+                    //-     ) {{$t('team')}}
                     li.listItem
                         NuxtLink.lin.col(
                             :to="localePath('/menu')" 

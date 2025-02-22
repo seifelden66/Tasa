@@ -32,7 +32,7 @@ div(class="bg-[#12284c] text-white py-4" :dir="$i18n.locale === 'ar' ? 'rtl' : '
     div(class="justify-center gap-6 items-center border-t border-gray-700 pt-4 space-x-6 text-sm hidden md:flex")
       NuxtLink(:to="localePath('/')" active-class="text-text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('home')}}
       NuxtLink(:to="localePath('about')" active-class="text-text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('about')}}
-      NuxtLink(:to="localePath('team')" active-class="text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('team')}}
+      //- NuxtLink(:to="localePath('team')" active-class  ="text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('team')}}
       NuxtLink(:to="localePath('menu')" active-class="text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('pageTitle3')}}
       NuxtLink(:to="localePath('orders')" active-class="text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('order now')}}
       NuxtLink(:to="localePath('social')" active-class="text-[#ffe5c7] font-bold" class="hover:text-[#ffe5c7]") {{$t('pageTitle4')}}

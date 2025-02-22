@@ -5,7 +5,7 @@
             .left(class="p-5")
                 h1(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'" class="text-5xl font-bold") {{$t('about_us')}}
             .image
-                NuxtImg(src="/maria.JPG" class="responsive-image")
+                img(src="/maria.JPG" class="responsive-image")
 
 .div3(style="background:#f8f8f8") 
     .contain(class="mt-10")
@@ -15,11 +15,11 @@
                 p(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'") {{t('story1')}}
             .line 
             .image
-                NuxtImg(src="/green-plate.jpg" class="responsive-image")
+                img(src="/green-plate.jpg" class="responsive-image")
             
         .ittem(:dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'"  data-aos="fade-up" :data-aos-duration="400" :data-aos-delay="400") 
             .image
-                NuxtImg(src="/boy.jpg" class="responsive-image")
+                img(src="/boy.jpg" class="responsive-image")
             .line
             .cont 
                 h2(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'") {{$t('history')}}
@@ -30,7 +30,7 @@
                 p(:style="$i18n.locale === 'ar' ? 'text-align:right' : 'text-align:left'") {{t('ourVision')}}
             .line 
             .image
-                NuxtImg(src="/eat.jpg" class="responsive-image")
+                img(src="/eat.jpg" class="responsive-image")
 </template>
 
 <script setup lang="ts">

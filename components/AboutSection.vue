@@ -22,24 +22,23 @@
 
 <script setup>
 defineProps({
-    imageSrc: {
+  imageSrc: {
     type: String,
     required: true,
-    },
-    aboutHeader: {
+  },
+  aboutHeader: {
     type: String,
     required: true,
-    },
-    aboutContent: {
+  },
+  aboutContent: {
     type: String,
     required: true,
-    },
+  },
 });
 </script>
 
 <style scoped>
-
 .about-image img {
-    max-height: 500px;
+  max-height: 500px;
 }
 </style>
