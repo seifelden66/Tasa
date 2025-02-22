@@ -8,7 +8,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.4528540916244!2d48.0457768!3d29.1991471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf91cebe1fab35%3A0xe19019d196a2ee6a!2z2KjYr9mK2YLYqSDZhti22YTZhNmF2YrZhtipICBUYXNhIEV4cHJlc3PhuA!5e0!3m2!1sen!2sus!4v1681948743034!5m2!1sen!2sus"
                 width="100%"
                 height="400"
-                style="border:0;"
+                style="border:0; pointer-events: none;"
                 allowfullscreen=""
                 loading="lazy"
                 )
