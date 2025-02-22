@@ -10,12 +10,12 @@
         .image(class="md:w-1/2")
           NuxtImg(
             src="/maria.JPG"
-            provider="ipx"
+            
             width="600"
             height="400"
             class="responsive-image"
             loading="lazy"
-            format="webp"
+            
             quality="80"
           )
   
@@ -41,12 +41,12 @@
           .image(class="relative")
             NuxtImg(
               :src="item.image"
-              provider="ipx"
+              
               width="800"
               height="500"
               class="responsive-image"
               loading="lazy"
-              format="webp"
+              
               quality="75"
             )
   </template>
