@@ -37,7 +37,8 @@
             ) {{t(item.content)}}
           .line(v-if="!isMobile")
           // Apply rotate-90 class only on the last image
-          .image(class="relative" :class="{ 'rotate-90': index === items.length - 1 }")
+          //- .image(class="relative" :class="{ 'rotate-90': index === items.length - 1 }")
+          .image(class="relative")
             NuxtImg(
               :src="item.image"
               width="700"
@@ -49,7 +50,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
 import { useI18nUtils } from "../i18n";
 const { t, locale } = useI18nUtils();
 
@@ -67,7 +67,7 @@ const items = [
   {
     title: 'vision',
     content: 'ourVision',
-    image: '/eat.jpg'
+    image: '/stippn.jpeg'
   }
 ];
 
