@@ -5,7 +5,8 @@ div(class="bg-[#12284c] text-white py-4" :dir="$i18n.locale === 'ar' ? 'rtl' : '
       .flex.flex-col.items-start
         div.logo(class="md:w-28 w-24")
           //- img(src="/public/large stickers v.3.svg" alt="Logo")
-          NuxtImg(src="/tasa-logo.png")
+          NuxtLink(to="/")
+            NuxtImg(src="/tasa-logo.png")
         //- p.text-xs.mt-2.text-gray-400 {{ $i18n.locale }}
 
       .flex.items-center.relative
@@ -16,9 +17,9 @@ div(class="bg-[#12284c] text-white py-4" :dir="$i18n.locale === 'ar' ? 'rtl' : '
           MenuIcon/
         button(
         @click="changeLanguageEN" 
-        class="border-[#ffe5c7] rounded-full w-8 h-8 border grid place-items-center"
+        class="border-[#ffe5c7] rounded-full h-[32px] w-[32px] border p-0 flex items-center justify-center"
         )
-          span {{$i18n.locale === 'ar' ? 'EN' : 'ع'}}
+          span(class="m-0 p-0") {{$i18n.locale === 'ar' ? 'EN' : ' ع'}}
 
       div(class="items-center space-x-6 hidden md:flex")
         .flex.items-center.space-x-2
