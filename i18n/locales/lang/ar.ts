@@ -63,7 +63,7 @@ export default {
   mainDishes: "أطباق رئيسية",
   mainDishesDescription:
     "اكتشفوا أطباقنا الرئيسية اللذيذة التي تم إعدادها بعناية لتقديم أفضل مذاق.",
-  appetizers: "مقبلات",
+  appetizers: "المقبلات",
   appetizersDescription:
     "ابدأوا وجبتكم مع مقبلاتنا الشهية، المثالية لكل مناسبة.",
   sizesOfDishes: "أحجام الأصناف",
