@@ -11,7 +11,7 @@ div(class="section bg-gray-100 py-32 mt-32")
                     p(class="") {{ $t('mainDishesDescription') }}
 
             div(class="category flex flex-col md:flex-row-reverse items-center gap-6")
-                img(src="/main-dishes.jpeg" alt="altText" class="w-full md:w-1/2 h-auto object-cover rounded-md")
+                img(src="/apperizers.jpeg" alt="altText" class="w-full md:w-1/2 h-auto object-cover rounded-md")
                 div(class="category-content flex-1 text-center pb-2" dir="auto" :class="{'md:text-left': dir === 'ltr', 'md:text-right': dir === 'rtl'}")
                     h2(class="text-2xl font-semibold text-[#262c27] mb-4") {{ $t('appetizers') }}
                     p(class="text-gray-600") {{ $t('appetizersDescription') }}
