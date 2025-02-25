@@ -19,15 +19,27 @@ div(class="section bg-gray-100 py-32 mt-32")
             h2(class="text-2xl font-semibold text-[#262c27] mb-4 text-center") {{ $t('sizesOfDishes') }}
             div(class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6")
                 div(class="size-card flex flex-col items-center text-center bg-gray-50 shadow-sm rounded-md p-4")
-                    h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('regularTasa') }}
-                    p(class="text-gray-600 text-sm") {{ $t('regularTasaDescription') }}
+                    .desc(class='h-24')
+                        h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('regularTasa') }}
+                        p(class="text-gray-600 text-sm") {{ $t('regularTasaDescription') }}
+                    .desc(class='h-24 mt-2')
+                        img(class="mx-auto object-contain h-full" src="/tasa-reg.png")
                 div(class="size-card flex flex-col items-center text-center bg-gray-50 shadow-sm rounded-md p-4")
-                    h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('tawisa') }}
-                    p(class="text-gray-600 text-sm") {{ $t('tawisaDescription') }}
+                    .desc(class='h-24')
+                        h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('tawisa') }}
+                        p(class="text-gray-600 text-sm") {{ $t('tawisaDescription') }}
+                    .desc(class='h-24 mt-2')
+                        img(class="mx-auto object-contain h-full" src="/tawisa.png")
                 div(class="size-card flex flex-col items-center text-center bg-gray-50 shadow-sm rounded-md p-4")
-                    h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('tasaAlHilween') }}
-                    p(class="text-gray-600 text-sm") {{ $t('tasaAlHilweenDescription') }}
+                    .desc(class='h-24')
+                        h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('tasaAlHilween') }}
+                        p(class="text-gray-600 text-sm") {{ $t('tasaAlHilweenDescription') }}
+                    .desc(class='h-28 mt-2')
+                        img(class="mx-auto object-contain h-full" src="/helwen.png")
                 div(class="size-card flex flex-col items-center text-center bg-gray-50 shadow-sm rounded-md p-4")
-                    h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('platters') }}
-                    p(class="text-gray-600 text-sm") {{ $t('plattersDescription') }}
+                    .desc(class='h-24')
+                        h3(class="font-bold text-lg text-[#262c27] mb-2") {{ $t('platters') }}
+                        p(class="text-gray-600 text-sm") {{ $t('plattersDescription') }}
+                    .desc(class='h-24 mt-2')
+                        img(class="mx-auto object-contain h-full" src="/platters.png")
 </template>
